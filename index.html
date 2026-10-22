@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi primera página web</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fb;
+      color: #172033;
+      text-align: center;
+    }
+
+    header {
+      background: #0b1220;
+      color: white;
+      padding: 80px 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      color: #cbd5e1;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 14px 25px;
+      background: #2563eb;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 35px 20px;
+    }
+
+    .habilidades {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .tarjeta {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px #00000010;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hola, soy Diego</h1>
+    <p>Bienvenido a mi laboratorio de proyectos web.</p>
+    <button onclick="saludar()">Conocer más</button>
+  </header>
+
+  <section>
+    <h2>Lo que estoy aprendiendo</h2>
+    <div class="habilidades">
+      <div class="tarjeta">HTML</div>
+      <div class="tarjeta">CSS</div>
+      <div class="tarjeta">JavaScript</div>
+    </div>
+  </section>
+
+  <script>
+    function saludar() {
+      alert("¡Bienvenido a mi primera página web!");
+    }
+  </script>
+</body>
+</html>
