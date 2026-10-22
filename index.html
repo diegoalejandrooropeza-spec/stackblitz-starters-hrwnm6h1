@@ -3,60 +3,52 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi primera página web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Primera Web | Oropeza Solutions</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f3f6fb;
-      color: #172033;
       text-align: center;
+      color: #1e293b;
     }
 
     header {
-      background: #0b1220;
+      background: #0f172a;
       color: white;
       padding: 80px 20px;
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 12px;
+      font-size: 40px;
     }
 
-    header p {
-      color: #cbd5e1;
+    p {
+      line-height: 1.6;
     }
 
     button {
-      margin-top: 20px;
-      padding: 14px 25px;
       background: #2563eb;
-      border: none;
-      border-radius: 8px;
       color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 8px;
       cursor: pointer;
-      font-size: 16px;
     }
 
     section {
-      padding: 35px 20px;
-    }
-
-    .habilidades {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
+      padding: 40px 20px;
     }
 
     .tarjeta {
+      display: inline-block;
       background: white;
       padding: 25px;
+      margin: 10px;
       border-radius: 12px;
-      box-shadow: 0 3px 12px #00000010;
+      box-shadow: 0 4px 12px #00000015;
     }
   </style>
 </head>
@@ -64,22 +56,22 @@
 <body>
   <header>
     <h1>Hola, soy Diego</h1>
-    <p>Bienvenido a mi laboratorio de proyectos web.</p>
+    <p>Bienvenido a mi primera página web.</p>
     <button onclick="saludar()">Conocer más</button>
   </header>
 
   <section>
-    <h2>Lo que estoy aprendiendo</h2>
-    <div class="habilidades">
-      <div class="tarjeta">HTML</div>
-      <div class="tarjeta">CSS</div>
-      <div class="tarjeta">JavaScript</div>
-    </div>
+    <h2>Mi laboratorio de tecnología</h2>
+    <p>Estoy aprendiendo desarrollo web.</p>
+
+    <div class="tarjeta">HTML</div>
+    <div class="tarjeta">CSS</div>
+    <div class="tarjeta">JavaScript</div>
   </section>
 
   <script>
     function saludar() {
-      alert("¡Bienvenido a mi primera página web!");
+      alert("¡Bienvenido a Oropeza Solutions!");
     }
   </script>
 </body>
